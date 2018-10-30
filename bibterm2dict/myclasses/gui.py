@@ -410,6 +410,9 @@ class GuiCore(Tk):
 #        print(self.BibTerm)
         self.BibTerm = os.path.normpath(\
                 os.environ['HomeDrive'] + os.environ['HomePath'] + '\\BibTerm')
+        if not os.path.isdir(self.BibTerm):
+            os.makedirs(self.BibTerm)
+            
 #        messagebox.showwarning('self.BibTerm', ">{}<".format(self.BibTerm))
 
         self.list_projects = sorted([f[:-4] for f in os.listdir(self.BibTerm) \
