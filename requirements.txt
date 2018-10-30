@@ -1,0 +1,4 @@
+﻿lxml>=3.4.4
+unidecode>=0.4.1
+psutil>=3.4.2
+Sphinx>=1.6.5

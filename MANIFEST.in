@@ -1,0 +1,2 @@
+include bibterm2dict/*.html
+recursive-include bibterm2dict/images *
